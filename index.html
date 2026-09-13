@@ -3,56 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="" rel="stylesheet">
-  <link href="" rel="stylesheet">
+  <meta name="description" content="Thaw Zin Oo @ Innocent — IT Student, Software Developer, Web Developer">
+  <title>Thaw Zin Oo @ Innocent — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <video autoplay muted loop id="bg-video">
+  <video autoplay muted loop id="bg-video" preload="auto">
     <source src="images/Tycho Minimal Black Hd Live Wallpaper.mp4" type="video/mp4">
   </video>
+
   <div class="main-container">
-    <div class="top-row">
-      <div class="left-section">
-        <div class="container">
-          <h1>Portfolio</h1>
-          <p class="about">I’m Innocent. </p>
-          <p>IT Student proficient in ChatGPT Prompt engineering</p>
-          <h2>Skills</h2>
-          <a href="#" class="link-button">
-            <img src="images/py_0.png" alt="Python" class="skill-logo"> Python
-          </a>
-          <a href="#" class="link-button">
-            <img src="images/ht_0.png" alt="HTML" class="skill-logo"> HTML
-          </a>
-          <a href="#" class="link-button">
-            <img src="images/cs_0.png" alt="CSS" class="skill-logo"> CSS
-            </a>
+
+    <!-- Hero / Identity -->
+    <header class="hero">
+      <div class="profile-wrap">
+        <img src="images/profile.jpg" alt="Thaw Zin Oo @ Innocent"
+             class="profile-photo"
+             onerror="this.onerror=null;this.src='images/profile.svg';">
+      </div>
+      <div class="hero-text">
+        <h1>Thaw Zin Oo <span class="accent">@ Innocent</span></h1>
+        <p class="tagline">IT Student · Software Development · Web Development</p>
+        <p class="location">&#127757; Bangkok, Thailand</p>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Third-year Information Technology student at Krirk University with a strong interest in software development,
+         artificial intelligence, and emerging technologies. Experienced with Python, JavaScript, HTML, CSS, databases,
+         and web development, with academic experience building web-based systems and working with data. Seeking an IT
+         internship where I can apply my technical knowledge and contribute to real-world software and AI-related projects.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <a href="#" class="link-button"><img src="images/py_0.png" alt="Python" class="skill-logo"> Python</a>
+          <a href="#" class="link-button"><img src="images/js_0.png" alt="JavaScript" class="skill-logo" onerror="this.parentNode.removeChild(this)"> JavaScript</a>
+          <a href="#" class="link-button"><span class="txt-logo">&#128187;</span> Prompt Engineering</a>
+        </div>
+        <div class="skill-group">
+          <h3>Web Development</h3>
+          <a href="#" class="link-button"><img src="images/ht_0.png" alt="HTML" class="skill-logo"> HTML</a>
+          <a href="#" class="link-button"><img src="images/cs_0.png" alt="CSS" class="skill-logo"> CSS</a>
+          <a href="#" class="link-button"><span class="txt-logo">&#128225;</span> Flask</a>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Databases</h3>
+          <a href="#" class="link-button"><span class="txt-logo">&#128202;</span> SQL / MySQL / SQLite</a>
+          <a href="#" class="link-button"><span class="txt-logo">&#128200;</span> Pandas · NumPy · Matplotlib</a>
+          <a href="#" class="link-button"><span class="txt-logo">&#129504;</span> scikit-learn</a>
+        </div>
+        <div class="skill-group">
+          <h3>Foundations &amp; Tools</h3>
+          <a href="#" class="link-button"><span class="txt-logo">&#128218;</span> OOP · DSA · Algorithms</a>
+          <a href="#" class="link-button"><span class="txt-logo">&#128279;</span> Networking · Troubleshooting</a>
+          <a href="#" class="link-button"><img src="images/github.png" alt="Git" class="skill-logo"> Git · GitHub · Linux</a>
         </div>
       </div>
-      <div class="right-section">
-        <div class="container contact-container">
-          <h2>Projects</h2>
-          <a href="vitacell.html" class="link-button" target="_blank">VitaCell</a>
-          <a href="" class="eternaskin.html" target="_blank">EternaSkin™</a>
+    </section>
+
+    <!-- Qualifications: Education + Experience -->
+    <section class="card">
+      <h2>Qualifications</h2>
+
+      <div class="qual-group">
+        <h3>Education</h3>
+        <div class="qual-item">
+          <div class="qual-head">
+            <strong>Bachelor of Information Technology</strong>
+            <span class="qual-date">Expected 2028</span>
+          </div>
+          <em>Krirk University — Bangkok, Thailand &#183; Third Year</em>
+          <p class="qual-detail">Relevant coursework: Programming &#183; OOP &#183; Data Structures &amp; Algorithms &#183;
+             Database Systems &#183; Web Development &#183; Data Analysis &#183; Computer Networking</p>
         </div>
       </div>
-    </div>
-    <div class="bottom-row">
-      <div class="container projects-container">
-        <h2></h2>
-          <a href="" class="link-button" target="_blank">
-            <img src="images/linkedin.png" alt="Linkedin" class="skill-logo"> Linkedin</a>
-          <a href="" class="link-button" target="_blank">
-            <img src="images/gmail.png" alt="Linkedin" class="skill-logo">Gmail</a>
-          <a href="" class="link-button" target="_blank">
-            <img src="images/github.png" alt="Linkedin" class="skill-logo">GitHub</a>
-          
+
+      <div class="qual-group">
+        <h3>Experience</h3>
+        <div class="qual-item">
+          <div class="qual-head">
+            <strong>Tutor — Self-Employed</strong>
+            <span class="qual-date">Jun 2017 – Jan 2024</span>
+          </div>
+          <em>Yangon, Myanmar</em>
+          <p class="qual-detail">One-on-one and small-group tutoring; prepared students for IELTS and GED exams;
+             built personalized study plans and strong communication skills.</p>
+        </div>
+        <div class="qual-item">
+          <div class="qual-head">
+            <strong>Tutor — RISE Education</strong>
+            <span class="qual-date">May 2019 – May 2022</span>
+          </div>
+          <em>Yangon, Myanmar</em>
+          <p class="qual-detail">Taught Mathematics and English at IGCSE level; created lesson plans, practice materials,
+             and mock exams; monitored student progress and adapted methods.</p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="card">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="vitacell.html" target="_blank" class="project-card">
+          <h3>VitaCell&#8482;</h3>
+          <p>Wearable cellular nutrient system concept — a full dark-themed prototype website.</p>
+          <span class="project-tech">HTML · CSS</span>
+        </a>
+        <a href="eternaskin.html" target="_blank" class="project-card">
+          <h3>EternaSkin&#8482;</h3>
+          <p>Skincare brand concept project page.</p>
+          <span class="project-tech">HTML · CSS</span>
+        </a>
+        <span class="project-card">
+          <h3>Learning Management System</h3>
+          <p>Full-stack web-based LMS: user/course management, SQLite database, responsive UI.</p>
+          <span class="project-tech">Python · Flask · JS · SQLite</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- Languages & Interests -->
+    <section class="card">
+      <h2>Languages &amp; Interests</h2>
+      <p class="languages"><strong>Languages:</strong> Burmese (Native) &#183; English (Advanced)</p>
+      <p class="interests"><strong>Interests:</strong> Artificial Intelligence &#183; Software Development &#183; Web Development &#183;
+         Data Analysis &#183; IT Systems &#183; Emerging Technologies</p>
+    </section>
+
+    <!-- Contact -->
+    <footer class="card contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-row">
+        <a href="mailto:innoc33@gmail.com" class="link-button" target="_blank">
+          <img src="images/gmail.png" alt="Email" class="skill-logo"> innoc33@gmail.com</a>
+        <a href="https://github.com/innocentqqq" class="link-button" target="_blank">
+          <img src="images/github.png" alt="GitHub" class="skill-logo"> GitHub</a>
+        <a href="https://www.linkedin.com/in/thaw-zin-oo-184862287" class="link-button" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn" class="skill-logo"> LinkedIn</a>
+      </div>
+      <p class="footer-note">&copy; 2026 Thaw Zin Oo @ Innocent. Crafted with &#9829; in Bangkok.</p>
+    </footer>
+
   </div>
 </body>
 </html>
-
-
